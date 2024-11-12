@@ -76,16 +76,16 @@ for file_ in ['pyrogram.session', 'pyrogram.session-journal',
     if path.exists(file_):
         remove(file_)
 
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7577941907:AAEt9cKXdXrPUZo_l70Krwydc9AtSdC4s-Q')
 if len(BOT_TOKEN) == 0:
     error("BOT_TOKEN variable is missing! Exiting now")
     exit(1)
 
 bot_id = int(BOT_TOKEN.split(':', 1)[0])
 
-DATABASE_URL = environ.get('DATABASE_URL', '')
+DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://suproboiragi2:t4GwmmrWCkUcX3Ui@cluster0.nn4hh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 if len(DATABASE_URL) == 0:
-    DATABASE_URL = ''
+    DATABASE_URL = 'mongodb+srv://suproboiragi2:t4GwmmrWCkUcX3Ui@cluster0.nn4hh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 
 if DATABASE_URL:
     conn = MongoClient(DATABASE_URL)
@@ -108,28 +108,28 @@ if DATABASE_URL:
     if qbit_opt := db.settings.qbittorrent.find_one({'_id': bot_id}):
         del qbit_opt['_id']
         qbit_options = qbit_opt
-    BOT_TOKEN = environ.get('BOT_TOKEN', '')
+    BOT_TOKEN = environ.get('BOT_TOKEN', '7577941907:AAEt9cKXdXrPUZo_l70Krwydc9AtSdC4s-Q')
     bot_id = int(BOT_TOKEN.split(':', 1)[0])
-    DATABASE_URL = environ.get('DATABASE_URL', '')
+    DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://suproboiragi2:t4GwmmrWCkUcX3Ui@cluster0.nn4hh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     conn.close()
 else:
     config_dict = {}
 
-OWNER_ID = environ.get('OWNER_ID', '')
+OWNER_ID = environ.get('OWNER_ID', '5659668981')
 if len(OWNER_ID) == 0:
     error("OWNER_ID variable is missing! Exiting now")
     exit(1)
 else:
     OWNER_ID = int(OWNER_ID)
 
-TELEGRAM_API = environ.get('TELEGRAM_API', '')
+TELEGRAM_API = environ.get('TELEGRAM_API', '22920744')
 if len(TELEGRAM_API) == 0:
     error("TELEGRAM_API variable is missing! Exiting now")
     exit(1)
 else:
     TELEGRAM_API = int(TELEGRAM_API)
 
-TELEGRAM_HASH = environ.get('TELEGRAM_HASH', '')
+TELEGRAM_HASH = environ.get('TELEGRAM_HASH', '31cb93c017f265e4fa6d0ba91236b826')
 if len(TELEGRAM_HASH) == 0:
     error("TELEGRAM_HASH variable is missing! Exiting now")
     exit(1)
