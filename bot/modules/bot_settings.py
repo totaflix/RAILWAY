@@ -38,7 +38,7 @@ default_values = {'AUTO_DELETE_MESSAGE_DURATION': 30,
 
 def load_config():
 
-    BOT_TOKEN = environ.get('BOT_TOKEN', '7527786291:AAF61hI7FZPkzsQcPxDOFp-AcGSlErCyG8M')
+    BOT_TOKEN = environ.get('BOT_TOKEN', '7577941907:AAEt9cKXdXrPUZo_l70Krwydc9AtSdC4s-Q')
     if len(BOT_TOKEN) == 0:
         BOT_TOKEN = config_dict['BOT_TOKEN']
 
