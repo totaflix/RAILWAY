@@ -1,4 +1,4 @@
-FROM dawn001/z_mirror:latest
+FROM star909/rys:latest
 # FROM dawn001/z_mirror:arm64
 # FROM dawn001/z_mirror:armv7
 # FROM dawn001/z_mirror:s390x
