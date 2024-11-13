@@ -38,29 +38,29 @@ default_values = {'AUTO_DELETE_MESSAGE_DURATION': 30,
 
 def load_config():
 
-    BOT_TOKEN = environ.get('BOT_TOKEN', '')
+    BOT_TOKEN = environ.get('BOT_TOKEN', '7527786291:AAF61hI7FZPkzsQcPxDOFp-AcGSlErCyG8M')
     if len(BOT_TOKEN) == 0:
         BOT_TOKEN = config_dict['BOT_TOKEN']
 
-    TELEGRAM_API = environ.get('TELEGRAM_API', '')
+    TELEGRAM_API = environ.get('TELEGRAM_API', '22920744')
     if len(TELEGRAM_API) == 0:
         TELEGRAM_API = config_dict['TELEGRAM_API']
     else:
         TELEGRAM_API = int(TELEGRAM_API)
 
-    TELEGRAM_HASH = environ.get('TELEGRAM_HASH', '')
+    TELEGRAM_HASH = environ.get('TELEGRAM_HASH', '31cb93c017f265e4fa6d0ba91236b826')
     if len(TELEGRAM_HASH) == 0:
         TELEGRAM_HASH = config_dict['TELEGRAM_HASH']
 
-    OWNER_ID = environ.get('OWNER_ID', '')
+    OWNER_ID = environ.get('OWNER_ID', '5659668981')
     if len(OWNER_ID) == 0:
         OWNER_ID = config_dict['OWNER_ID']
     else:
         OWNER_ID = int(OWNER_ID)
 
-    DATABASE_URL = environ.get('DATABASE_URL', '')
+    DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://suproboiragi2:t4GwmmrWCkUcX3Ui@cluster0.nn4hh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     if len(DATABASE_URL) == 0:
-        DATABASE_URL = ''
+        DATABASE_URL = 'mongodb+srv://suproboiragi2:t4GwmmrWCkUcX3Ui@cluster0.nn4hh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 
     DOWNLOAD_DIR = environ.get('DOWNLOAD_DIR', '')
     if len(DOWNLOAD_DIR) == 0:
